@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    tools:context=".HelperProfile">
+
+    <LinearLayout
+        android:id="@+id/priInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/avatarCus"
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/thumbnail_height"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black"/>
+        <TextView
+            android:id="@+id/fullNameCus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatarCus"
+            android:layout_gravity="center"
+            android:hint="Full Name"
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneCus"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:hint="Phone Number"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sexCus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priInfor"
+        android:gravity="center"
+        android:hint="Gender"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexCus"
+        android:id="@+id/dob"
+        android:gravity="center"
+        android:hint="DOB"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/addsCus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:gravity="center"
+        android:hint="Address"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addsCus"
+        android:gravity="center"
+        android:hint="Note from customer"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <RatingBar
+        android:id="@+id/ratingCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note"
+        android:layout_centerHorizontal="true"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:padding="3dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingCus"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/booking"
+        android:textStyle="bold"
+        android:background="@drawable/button1"
+        android:text="Rent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History of Rating"
+            android:textSize="15dp"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:id="@+id/histRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

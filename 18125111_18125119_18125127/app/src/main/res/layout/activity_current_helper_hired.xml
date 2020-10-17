@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentHelperHired"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    android:paddingTop="60dp"
+    android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Customer Hired"
+      android:textAlignment="center"
+      android:textStyle="bold"
+      android:fontFamily="@font/antic"
+      android:textSize="30dp"
+      />
+  <ScrollView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_panel"
+        android:orientation="horizontal"
+        >
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:id="@+id/Cavt"
+          android:background="@color/white"/>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/CName"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cphone"
+            android:textStyle="bold"
+            android:hint="Phone Number"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:background="@drawable/button1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addToFav"
+            android:text="Add To Favorite"
+            android:background="@drawable/button1"/>
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+  </ScrollView>
+
+
+</LinearLayout>
